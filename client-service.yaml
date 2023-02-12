@@ -1,9 +1,16 @@
 server:  
   port: ${PORT:8081}
 
-myproperty: value11111  
+myproperty: value 
 
 myproperties:
    properties:
       - value1
       - value2
+      
+spring:
+ rabbitmq:
+   host: localhost
+   port: 5672
+   username: guest
+   password: guest 
