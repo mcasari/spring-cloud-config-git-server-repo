@@ -1,5 +1,28 @@
 server:  
   port: ${PORT:8081}
+  
+spring:
+  mvc:
+     pathmatch:
+        matching-strategy: ant_path_matcher
+  security:
+     user:
+        name: username
+        password: pass
+  rabbitmq:
+     host: localhost
+     port: 5672
+     username: guest
+     password: guest 
+   
+management:
+   endpoint: 
+      health:
+         show-details: always
+   endpoints: 
+      web:
+         exposure:
+            include: '*'
 
 myproperty: value22222
 
@@ -7,3 +30,4 @@ myproperties:
    properties:
       - value1
       - value2
+      
