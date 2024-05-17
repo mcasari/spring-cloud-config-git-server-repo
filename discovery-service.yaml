@@ -11,12 +11,12 @@ spring:
 eureka:
    instance:
       hostname: localhost
-      securePort: 8760
+      securePort: ${server.port}
       securePortEnabled: true  
       nonSecurePortEnabled: false 
-      homePageUrl: https://${eureka.instance.hostname}:8760/
-      statusPageUrl: https://${eureka.instance.hostname}:8760/admin/info
-      healthCheckUrl: https://${eureka.instance.hostname}:8760/health
+      homePageUrl: https://${eureka.instance.hostname}:${server.port}/
+      statusPageUrl: https://${eureka.instance.hostname}:${server.port}/admin/info
+      healthCheckUrl: https://${eureka.instance.hostname}:${server.port}/health
    client:
       registerWithEureka: false
       fetchRegistry: false
