@@ -11,7 +11,7 @@ spring:
 eureka:
    instance:
       hostname: localhost
-      securePort: ${server.port}
+      securePort: 8760
       securePortEnabled: true  
       nonSecurePortEnabled: false 
       homePageUrl: https://${eureka.instance.hostname}:${server.port}/
