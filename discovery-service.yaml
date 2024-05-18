@@ -21,7 +21,7 @@ eureka:
       registerWithEureka: false
       fetchRegistry: false
       
-   tls:
+   ssl:
       enabled: true
       client-auth: need
       key-store: classpath:discovery.p12
