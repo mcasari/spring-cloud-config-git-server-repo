@@ -1,11 +1,5 @@
 server:
-   port: ${PORT:8760}
-spring:  
-  security:
-    user:
-      name: myusername
-      password: mypassword
-    require-ssl: true               
+   port: ${PORT:8760}             
 eureka:
    instance:
       hostname: localhost
