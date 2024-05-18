@@ -1,8 +1,6 @@
 server:
   port: '${PORT:8092}'
 spring:
-  application:
-    name: book-service
   main:
     allow-bean-definition-overriding: true
   datasource:
@@ -21,6 +19,9 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+
+security:
+  require-ssl: true
 
 eureka:
   client:
