@@ -36,5 +36,5 @@ eureka:
       trust-store-type: PKCS12
       trust-store-password: mypass
             
-myproperty: myvalue     
+secretBookTitle: Ulysses
       
