@@ -3,10 +3,10 @@ server:
   ssl:
      enabled: true
      key-store: classpath:books.p12
-     key-store-password: mypass
+     key-store-password: {cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw=
      key-store-type: PKCS12
      trust-store: classpath:books.p12
-     trust-store-password: mypass
+     trust-store-password:{cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw=
     
 security:
   require-ssl: true
@@ -30,9 +30,9 @@ eureka:
       enabled: true
       key-store: classpath:books.p12
       key-store-type: PKCS12
-      key-store-password: mypass
-      key-password: mypass
+      key-store-password: {cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw=
+      key-password: {cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw=
       trust-store: classpath:books.p12
       trust-store-type: PKCS12
-      trust-store-password: mypass
+      trust-store-password: {cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw=
       
