@@ -12,17 +12,6 @@ security:
   require-ssl: true
   
 eureka:
-  instance:
-    hostname: localhost
-    securePort: ${server.port}
-    securePortEnabled: true  
-    nonSecurePortEnabled: false 
-    secureVirtualHostName: ${spring.application.name}
-    homePageUrl: https://${eureka.instance.hostname}:${server.port}/
-    statusPageUrl: https://${eureka.instance.hostname}:${server.port}/admin/info
-    metadataMap:
-      hostname : ${eureka.instance.hostname}
-      securePort: ${server.port}
   client:
     serviceUrl:
       defaultZone: 'https://localhost:8760/eureka/'
