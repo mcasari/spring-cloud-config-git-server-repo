@@ -12,6 +12,17 @@ security:
   require-ssl: true
   
 eureka:
+  instance:
+    hostname: localhost
+    securePort: ${server.port}
+    securePortEnabled: true  
+    nonSecurePortEnabled: false 
+    secureVirtualHostName: ${spring.application.name}
+    homePageUrl: https://${eureka.instance.hostname}:${server.port}/
+    statusPageUrl: https://${eureka.instance.hostname}:${server.port}/admin/info
+    metadataMap:
+      hostname : ${eureka.instance.hostname}
+      securePort: ${server.port}
   client:
     serviceUrl:
       defaultZone: 'https://localhost:8760/eureka/'
@@ -23,5 +34,4 @@ eureka:
       key-password: '{cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw='
       trust-store: classpath:books.p12
       trust-store-type: PKCS12
-      trust-store-password: '{cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw='
-      
+      trust-store-password: '{cipher}AQA0oPBAK1my1NcL3WUbl5LnJzDQ1bHEbmqhLyb0SRMqr7QWrPihDwjBxVMuWd8TD3Z47Dk1lJAdrvHUKBQEk3xfrPlHa2ioxZvaVYJhpUi84csdKNjHsbGclB9DNkGu90oVhUMuRxBTzjwcqA50KGUEQuxTYZ0zOye/kfUQ6THco7c3swUq6ni7VuB+d7KajBVct+yuND6o4tJ++WiJRWBsbEUqt/emO2kxRfmeTAFL3ExLvrLFmHT56KE4bEij1sDQBQucYH/oPL1Cmu+eiOMb91Kg4IAEfOZjSnlqFLWYDTZElghSx6WImxMUSmHc6zYRgICS6oQOI3zFIWeMqYomha4IcU0qx+pLMCwrYYrD99IM1bxL7y0nC2+x1SH4qbw='      
